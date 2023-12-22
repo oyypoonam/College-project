@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registartion Form</title>
+        <link rel="stylesheet" href="C:\Users\hp\Documents\style.css">
+        <style>
+.form-container {width: 25%;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSKCTCT9YOnqqDUKkzfuU2J_tfQiED0-s7g&usqp=CAU");
+        
+            height: 80%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: bisque;
+          border-radius: 10px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          font-family: goth;}
+
+          .submit-button {padding: 10px 20px;
+          background-color:lightcoral;
+          border: none;
+          color: black;
+          border-radius: 4px;
+          font-size: 1rem;
+          cursor: pointer;}
+
+          form-container input, textarea{width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+    font-family: goth;}
+    .shining-border {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;}
+
+
+.shining-border:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 0%, transparent 25%, rgba(255,255,255,0.2) 40%, transparent 50%, transparent 60%, rgba(255,255,255,0.2) 75%, transparent 100%);
+    filter: blur(10px);
+    animation: shining 1.5s linear infinite;}
+
+
+@keyframes shining {
+    0% {
+        transform: rotate(0deg);}
+     100% {
+        transform: rotate(360deg);}  }
+
+.shining-border:hover {
+    transform: scale(1.1);}
+
+
+@keyframes shining {
+    0% {
+        transform: rotate(0deg);}
+    
+    100% {
+        transform: rotate(360deg);}}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="dropdown">
+                <span>Menu</span>
+                <div class="dropdown-content">
+                  <a href="C:\Users\hp\Documents\gallery.html">gallery</a>
+                  <a href="C:\Users\hp\Documents\contact form.html">contact us</a>
+                  <a href="C:\Users\hp\Documents\about us.html">about us</a>
+                  <a href="C:\Users\hp\Documents\feedback.html">feedback</a>
+                  <a href="C:\Users\hp\Documents\login form.html">login</a>
+                </div>
+                </div>
+            </header>
+            <section class="contact-form">
+                <div class="form-container">
+                    <h2>Registartion Form</h2>
+                    <form>
+                    <label>First Name</label>
+                     <input type="text" placeholder="your name"><br><br>
+                     <label>Last Name</label>
+                     <input type="text" placeholder="your last name"><br><br>  
+                     <label>Date of Birth</label>  
+                     <input type="date"><br><br>         
+                     <label>Adress</label>    
+                     <input type="text" >  <br><br> 
+                     <label>Your email adress</label>      
+                        <input type="email" placeholder="your email adress"><br><br>
+                    <label>Phone Number</label>                      
+                        <input type="tel"><br><br>                 
+                        <button type="submit" class="submit-button shining-border">Submit</button>
+                    </form>
+                </div>
+            </section>
+    </body>
+</html>
