@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form</title>
+        <link rel="stylesheet" href="C:\Users\hp\Documents\style.css">
+        <style>
+    
+           #video-background {float: left;
+                margin-top: 10px;
+                height:450px;
+                width: 300px;
+                border-radius: 25px;
+                transition: transform 0.3s ease;
+                margin-right: 30px }
+
+            #video-background:hover{transform: scale(1.2);}
+                 .form-container {width: 25%;
+            height: 80%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: bisque;
+          border-radius: 10px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          font-family: goth;}
+
+          .submit-button {padding: 10px 20px;
+          background-color:lightcoral;
+          border: none;
+          color: black;
+          border-radius: 4px;
+          font-size: 1rem;
+          cursor: pointer;}
+
+           inputbox{position: relative;
+                margin: 30px 0;
+                   width: 310px;
+                   height:600px;
+                border-bottom: 2px solid #fff;}
+               
+               .inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;}
+
+.shining-border {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;}
+
+
+.shining-border:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 0%, transparent 25%, rgba(255,255,255,0.2) 40%, transparent 50%, transparent 60%, rgba(255,255,255,0.2) 75%, transparent 100%);
+    filter: blur(10px);
+    animation: shining 1.5s linear infinite;}
+
+
+@keyframes shining {
+    0% {
+        transform: rotate(0deg);}
+     100% {
+        transform: rotate(360deg);}  }
+
+.shining-border:hover {
+    transform: scale(1.1);}
+
+
+@keyframes shining {
+    0% {
+        transform: rotate(0deg);}
+    
+    100% {
+        transform: rotate(360deg);}}
+     </style>
+    </head>
+    <body>
+    <header>
+            <div class="dropdown">
+                <span>menu</span>
+                <div class="dropdown-content">
+                <a href="C:\Users\hp\Documents\homepage.html">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+                <a href="C:\Users\hp\Documents\gallery.html">Gallery</a>
+                <a href="C:\Users\hp\Documents\feedback.html">feedback</a>
+                </div>
+                </div>
+        </header>
+        
+         <video autoplay loop muted id="video-background">
+            <source src="C:/Users/hp/Downloads/videoplayback.mp4" type="video/mp4">
+          </video>
+          <video autoplay loop muted id="video-background">
+            <source src="C:\Users\hp\Downloads\video2.mp4" type="video/mp4">
+            </video>
+          <video autoplay loop muted id="video-background">
+            <source src="C:\Users\hp\Downloads\viedo3.mp4" type="video/mp4">
+            </video>
+          <form>
+           <h1>Login form</h1>
+            <label>Login id</label><br>
+            <input type="username" id="username" name="username">
+            <ion-icon name="contact"></ion-icon>
+            <br><br>
+            <label>password</label><br>
+            <input type="password" id="password" name="password">
+            <ion-icon name="lock"></ion-icon>
+            <br><br>
+            <button type="submit" class="submit-button shining-border">Submit</button>
+            <a href="C:\Users\hp\Documents\Registration form.html">New user?</a>
+
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+          </form>
+        </body>
+</html>
